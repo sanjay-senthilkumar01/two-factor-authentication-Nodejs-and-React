@@ -190,8 +190,8 @@ const ValidateOTP = async (req: Request, res: Response) => {
       });
     }
     let totp = new OTPAuth.TOTP({
-      issuer: "codevoweb.com",
-      label: "CodevoWeb",
+      issuer: "neuralinverse.com",
+      label: "Webapp",
       algorithm: "SHA1",
       digits: 6,
       secret: user.otp_base32!,
